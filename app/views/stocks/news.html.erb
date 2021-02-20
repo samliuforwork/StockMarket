@@ -1,0 +1,14 @@
+<% @rss.each do |article| %>
+  <div>
+  標題：<%= article.title %>
+  描述：<%= article.description %>
+  </div>
+<% end %>
+
+<h2>F13</h2>
+<%= @dataroma.each do |item| %>
+  <div>
+  投資人：<%= link_to item.title, item.link, target: :_blank %>
+  時間：<%= item.pubDate %>
+  </div>
+<% end %>

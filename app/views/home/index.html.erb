@@ -1,2 +1,10 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<% StockQuote::Stock.new(api_key: 'pk_67e60b7c1ea247d5a21654ecf5e01a9f') %>
+<% stock = StockQuote::Stock.quote("CCL")%>
+<% stock1 = StockQuote::Stock.company("CCL")%>
+
+<%= stock.inspect %>
+<br>
+<%= stock1.inspect %>
