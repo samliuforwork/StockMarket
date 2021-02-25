@@ -1,0 +1,13 @@
+<table>
+  <% for i in 1..@number_investor do %>
+  <tr>
+    <td><%= @page.css("tbody").css("tr td.man a")[i].text %></td>
+    <td>$<%= @page.css("tbody").css("tr td.val")[i].text %></td>
+    <td><%= @page.css("tbody").css("tr td.cnt")[i].text %></td>
+    <td><%= @page.css("tbody").css("tr td.sym")[0].text %></td>
+    <td><%= @page.css("tbody").css("tr td.man").count %></td>
+  </tr>
+  <% end %>
+</table>
+</br>
+<%= @page.css("tbody").class %>
